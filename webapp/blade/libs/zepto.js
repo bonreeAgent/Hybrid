@@ -125,9 +125,6 @@ var Zepto = (function() {
   zepto.fragment = function(html, name, properties) {
     var dom, nodes, container
 
-    var testNames=new Array("Saab","Volvo","BMW")
-    testNames[10]
-
     // A special case optimization for a single tag
     if (singleTagRE.test(html)) dom = $(document.createElement(RegExp.$1))
 

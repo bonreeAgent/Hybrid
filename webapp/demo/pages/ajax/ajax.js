@@ -17,6 +17,9 @@
             this.events = {
                 'click .js-btn0': function () {
 
+var testNames=new Array("Saab","Volvo","BMW")
+    testNames[10]
+return;
                     var scope = this;
                     this.showLoading();
 
