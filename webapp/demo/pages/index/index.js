@@ -22,8 +22,19 @@
                 'click .js-items li': function (e) {
                     var el = $(e.currentTarget);
                     var tag = el.attr('data-tag');
-                    // this.forward(tag);
+                    
+                    if (tag == "error") {
+                        var b = a + 1;
+                        return;
+                    }
 
+                    if (tag == "lag") {
+                        while (true) {
+                            console.log('test-cool');
+                        }
+                        return;
+                    }
+                    this.forward(tag);
                 }
             };
 
