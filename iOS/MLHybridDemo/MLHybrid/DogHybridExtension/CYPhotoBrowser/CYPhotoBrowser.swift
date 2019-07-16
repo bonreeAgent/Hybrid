@@ -113,7 +113,7 @@ extension CYPhotoBrowser: UIPageViewControllerDelegate, UIPageViewControllerData
 
     }
     
-    func image(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo:UnsafeRawPointer){
+    @objc func image(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo:UnsafeRawPointer){
             if let ee = error as NSError? {
                 print(ee)
             } else {

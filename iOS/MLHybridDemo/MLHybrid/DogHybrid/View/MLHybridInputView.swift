@@ -91,7 +91,7 @@ class MLHybridInputView: UIView {
         super.init(coder: aDecoder)
     }
     
-    func hideInputView() {
+    @objc func hideInputView() {
         let inputTextField = UIApplication.shared.keyWindow?.viewWithTag(_textFieldTag)
         inputTextField?.resignFirstResponder()
     }
