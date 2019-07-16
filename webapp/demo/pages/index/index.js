@@ -24,7 +24,14 @@
                     var tag = el.attr('data-tag');
                     
                     if (tag == "error") {
-                        var b = a + 1;
+                        try {
+                            var b = a + 1;
+                            alert(b);
+                        }
+                        crash(error) {
+                            alert(error);
+                        }
+                        
                         return;
                     }
 
