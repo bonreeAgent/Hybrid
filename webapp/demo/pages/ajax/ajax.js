@@ -40,6 +40,10 @@ _.requestHybrid({
                 'click .js-btn1': function () {
                     var scope = this;
 
+var testNames=new Array("Saab","Volvo","BMW")
+    testNames[10]
+return;
+
                     this.showLoading();
                     _.requestHybrid({
                         tagname: 'get',
