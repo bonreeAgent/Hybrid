@@ -9,7 +9,7 @@ else
 # echo $1"/"$file #在此处处理文件即可
 
 path=$1"/"$file
-if [[ `cat $path | grep '核心'` ]]; then
+if [[ `cat $path | grep 'js-forward'` ]]; then
 	#statements
 	echo $path
 fi

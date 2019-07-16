@@ -22,7 +22,7 @@
                 'click .js-items li': function (e) {
                     var el = $(e.currentTarget);
                     var tag = el.attr('data-tag');
-                    this.forward(tag);
+                    // this.forward(tag);
 
                 }
             };
