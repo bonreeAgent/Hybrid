@@ -33,13 +33,13 @@ class MLPayForWechat: NSObject {
         }
     }
     
-    func success() {
+    @objc func success() {
         if let finishBlock = self.onRespBlock {
             finishBlock(true, "", "0")
         }
     }
 
-    func fail(_ notify: Notification) {
+    @objc func fail(_ notify: Notification) {
         if let finishBlock = self.onRespBlock {
             let error = (notify as NSNotification).userInfo?["errorMsg"] as? String
             let errorCode = (notify as NSNotification).userInfo?["code"] as? String
