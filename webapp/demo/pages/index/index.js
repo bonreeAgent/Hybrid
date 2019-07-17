@@ -28,7 +28,7 @@
                             var b = a + 1;
                             alert(b);
                         }
-                        crash(error) {
+                        catch(error) {
                             alert(error);
                         }
                         
