@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C98E58D22DEBA9500A4C2E7 /* bonreeAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C98E58C22DEBA9500A4C2E7 /* bonreeAgent.framework */; };
+		9C98E58F22DEBAC500A4C2E7 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C98E58E22DEBAC500A4C2E7 /* libresolv.9.tbd */; };
 		AAA32E0ABD1843260458F5CE /* Pods_MLHybridDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1A6CFC099073442A78DFCF /* Pods_MLHybridDemo.framework */; };
 		B59162C01EDEBEE500D1B466 /* MLHybridContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59162671EDEBEE400D1B466 /* MLHybridContentView.swift */; };
 		B59162C11EDEBEE500D1B466 /* MLHybridTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59162681EDEBEE500D1B466 /* MLHybridTools.swift */; };
@@ -62,6 +64,8 @@
 /* Begin PBXFileReference section */
 		13C2AA93CD003B1DF41EC087 /* Pods-MLHybridDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLHybridDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLHybridDemo/Pods-MLHybridDemo.release.xcconfig"; sourceTree = "<group>"; };
 		1B1A6CFC099073442A78DFCF /* Pods_MLHybridDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLHybridDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C98E58C22DEBA9500A4C2E7 /* bonreeAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = bonreeAgent.framework; sourceTree = "<group>"; };
+		9C98E58E22DEBAC500A4C2E7 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
 		B59162671EDEBEE400D1B466 /* MLHybridContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLHybridContentView.swift; sourceTree = "<group>"; };
 		B59162681EDEBEE500D1B466 /* MLHybridTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLHybridTools.swift; sourceTree = "<group>"; };
 		B59162691EDEBEE500D1B466 /* MLHybridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLHybridViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C98E58F22DEBAC500A4C2E7 /* libresolv.9.tbd in Frameworks */,
 				B59163241EDEDBAB00D1B466 /* SystemConfiguration.framework in Frameworks */,
 				B59163221EDEDB7B00D1B466 /* CoreTelephony.framework in Frameworks */,
 				B59163201EDEDB5A00D1B466 /* libc++.tbd in Frameworks */,
@@ -132,6 +137,7 @@
 				B59163161EDECE5000D1B466 /* CoreLocation.framework in Frameworks */,
 				AAA32E0ABD1843260458F5CE /* Pods_MLHybridDemo.framework in Frameworks */,
 				B59163121EDEC80100D1B466 /* AlipaySDK.framework in Frameworks */,
+				9C98E58D22DEBA9500A4C2E7 /* bonreeAgent.framework in Frameworks */,
 				B59163131EDEC80100D1B466 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +157,7 @@
 		2640887F24EDA2500587D992 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C98E58E22DEBAC500A4C2E7 /* libresolv.9.tbd */,
 				B59163231EDEDBAB00D1B466 /* SystemConfiguration.framework */,
 				B59163211EDEDB7B00D1B466 /* CoreTelephony.framework */,
 				B59163191EDED0FC00D1B466 /* libc++.tbd */,
@@ -344,6 +351,7 @@
 		B5BDC7A81EDEB59100925B14 /* MLHybridDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9C98E58C22DEBA9500A4C2E7 /* bonreeAgent.framework */,
 				B5BDC7A91EDEB59100925B14 /* AppDelegate.swift */,
 				B5BDC7AB1EDEB59100925B14 /* FirstViewController.swift */,
 				B5BDC7AD1EDEB59100925B14 /* SecondViewController.swift */,
@@ -649,6 +657,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MLHybrid/ThirdParty/Alipay",
+					"$(PROJECT_DIR)/MLHybridDemo",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = MLHybridDemo/Info.plist;
@@ -668,6 +677,7 @@
 					"-framework",
 					"\"YYModel\"",
 					"-lz",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Cy.MLHybridDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -686,6 +696,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MLHybrid/ThirdParty/Alipay",
+					"$(PROJECT_DIR)/MLHybridDemo",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = MLHybridDemo/Info.plist;
@@ -705,6 +716,7 @@
 					"-framework",
 					"\"YYModel\"",
 					"-lz",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Cy.MLHybridDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

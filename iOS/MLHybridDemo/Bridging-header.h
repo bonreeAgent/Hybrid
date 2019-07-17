@@ -17,3 +17,4 @@
 //微信
 #import "WXApiObject.h"
 #import "WXApi.h"
+#import <bonreeAgent/bonreeAgent.h>

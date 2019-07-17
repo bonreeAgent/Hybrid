@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        /// fdsfsdf
+        BRSAgent.setConfigAddress("http://devtest.ibr.cc:20107/config")
+        BRSAgent.start(withAppID: "7eed88ad-4cb2-4a9d-b014-32840d92d9b4")
+        
         //设置全局的网络拦截
         URLProtocol.registerClass(DogHybridURLProtocol.self)
         return true
